@@ -1,0 +1,8 @@
+{
+  "name": "Innotech Intelligent Health App v2 (UI facelift)",
+  "description": "Demo of the Innotech Intelligent Health App based on high level PRD requirements",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

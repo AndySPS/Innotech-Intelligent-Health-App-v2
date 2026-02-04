@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Innotech Health</title>
+    
+    <!-- PWA Basic -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3B82F6">
+    
+    <!-- iOS Standalone Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Innotech">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts & Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ["Plus Jakarta Sans", "sans-serif"],
+                        sans: ["Plus Jakarta Sans", "sans-serif"],
+                    },
+                    colors: {
+                        primary: "#3B82F6",
+                        "background-light": "#F8FAFC",
+                        "surface-light": "#FFFFFF",
+                        m3: {
+                            primary: '#3B82F6',
+                            onPrimary: '#FFFFFF',
+                            primaryContainer: '#D1E4FF',
+                            onPrimaryContainer: '#001D36',
+                            secondary: '#535F70',
+                            onSecondary: '#FFFFFF',
+                            secondaryContainer: '#D7E3F7',
+                            onSecondaryContainer: '#101C2B',
+                            tertiary: '#6B5778',
+                            onTertiary: '#FFFFFF',
+                            tertiaryContainer: '#F2DAFF',
+                            onTertiaryContainer: '#251431',
+                            background: '#F8FAFC',
+                            onBackground: '#0F172A',
+                            surface: '#FFFFFF',
+                            onSurface: '#0F172A',
+                            surfaceVariant: '#E2E8F0',
+                            onSurfaceVariant: '#64748B',
+                            outline: '#94A3B8',
+                        }
+                    },
+                    spacing: {
+                        'dp-4': '4px',
+                        'dp-8': '8px',
+                        'dp-12': '12px',
+                        'dp-16': '16px',
+                        'dp-24': '24px',
+                        'dp-32': '32px',
+                        'dp-48': '48px',
+                        'dp-56': '56px',
+                        'dp-64': '64px',
+                    },
+                    borderRadius: {
+                        'm3-none': '0px',
+                        'm3-xs': '8px',
+                        'm3-sm': '12px',
+                        'm3-md': '20px',
+                        'm3-lg': '28px',
+                        'm3-xl': '32px',
+                        'm3-full': '9999px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #F8FAFC;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .mesh-bg-light {
+            background-color: #DBEAFE;
+            background-image: 
+                radial-gradient(at 40% 20%, hsla(208,100%,93%,1) 0, transparent 50%), 
+                radial-gradient(at 80% 0%, hsla(189,100%,91%,1) 0, transparent 50%), 
+                radial-gradient(at 0% 50%, hsla(221,100%,95%,1) 0, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        #root {
+            min-height: 100vh;
+        }
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+<body class="font-display">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
